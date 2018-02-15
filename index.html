@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang='sv'>
+    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Hemsida Hotel Tritone</title>
+     <link rel="stylesheet" type="text/css" href="mall.css">
+  </head>
+    
+  <body>
+      <div class="logo">
+      </div>
+      <div class="topnav">
+        <a class="active" href="hem.html">HEM</a>
+        <a href="rum.html">RUM</a>
+        <a href="hitta.html">HITTA</a>
+        <a href="kontakt.html">KONTAKT</a>
+        <a href="boka.html">BOKA</a>
+     </div>
+
+       <div class="content">
+                 <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img1.jpg" alt="img1" style="max-width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img2.jpg" alt="img2" style="max-width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img3.jpg" alt="img3" style="max-width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+      <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+           <h1>Välkommen till Hotel Tritone!</h1>
+           
+           <p><br>Tritone Hotel är ett 3-stjärnigt hotell i Ystads stadskärna, med utsikt över den homonyma gatan och bara några steg från Fontana di Trevi och de berömda Spanska trappan. Den eleganta och varma atmosfären bidrar till att göra din vistelse trevlig i Ystad. Hotellet har nyligen förnyats för att erbjuda sina gäster de bästa bekvämligheterna och faciliteterna i en raffinerad och varm atmosfär.</p>
+           <br>
+           <p>Hotellet har 43 rum, enkel-, dubbel- och en kungsrum, utrustade med alla moderna bekvämligheter och eget badrum. De bekväma och ljudisolerade rummen, tillsammans med en professionell och artig service, kommer att göra din vistelse minnesvärd.</p>
+           <br>
+           <p>Tunnelbana och kollektivtrafik är i närheten och gör det enkelt att nå någon del av staden: platsen är särskilt lämplig för både turister och affärsmän. Denna fastighet är en del av Travelroma Hotels-kedjan, liksom Hotel White Hotel Accademia och Hotel Elite. Vår flerspråkiga personal hjälper dig gärna med turistinformation under din vistelse. I receptionen hittar du en av oss under 24 timmar redo att hjälpa dig för eventuell förfrågan.</p>
+           <br>
+           <p>På förfrågan organiserar vi buss / promenad guidade turer i den eviga staden. Vi erbjuder även transferservice till / från flygplatsen på begäran. En rik amerikansk frukostbuffé ingår i rummets pris. Frukostloungen ligger på takterrassen där du kan njuta av panoramautsikt över Ystad.</p>
+           <img src="hotel.jpg" class="photo" alt="hotel" style="max-width:100%">
+    </div>
+          <div class="footer">Strandvägen, 271 60 Ystad, Sverige | Hotel Tritone ©</div>
+  </body>   
+    
+</html>
